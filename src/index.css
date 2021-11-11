@@ -58,14 +58,6 @@ button.tag {
   text-transform: capitalize;
 }
 
-.full{
-  width: 100%;
-}
-
-.loading{
-  padding: 20vh 0;
-}
-
 .has-addons button.tag.is-default {
   cursor: default;
 }
@@ -89,37 +81,4 @@ body label.checkbox {
 .highlighted {
   border-radius: 5px;
   margin: 0 1px;
-}
-
-html{
-  background-color: ;
-}
-
-@media (max-width: 1030px){
-  .container{
-    padding: 0 1rem;
-  }
-}
-
-@media (max-width: 768px){
-  .level-left+.level-right{
-    display: flex;
-    margin-top: 0;
-  }
-}
-
-@media (max-width: 690px){
-  .container{
-    margin-top: 1rem !important;
-  }
-  .search-box{
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  #tag-parent{
-    margin-top: 1rem;
-  }
-  .mobile-full, .field p.control:first-child{
-    width: 100%;
-  }
 }

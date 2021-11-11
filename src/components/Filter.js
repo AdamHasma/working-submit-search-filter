@@ -30,11 +30,11 @@ const Filter = ({ allTags, isSelected, setSelected, setCurrentTags, searchKeywor
   }, [isChecked]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-  <div className="mt-3 search-box is-flex is-justify-content-space-between">
+  <div className="is-flex is-justify-content-space-between">
 
     {/* Left side */}
-    <div className="mobile-full level-left">
-      <div className="mobile-full level-item">
+    <div className="level-left">
+      <div className="level-item">
         <Search searchKeyword={searchKeyword} term={term} />
       </div>
     </div>

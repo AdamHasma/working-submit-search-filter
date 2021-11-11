@@ -144,23 +144,13 @@ const App = () => {
         )
         : (
           <div>
-            <div className="is-align-items-center is-flex is-justify-content-space-between">
-              <div className="logo">
-                <h1 className="title is-1 mb-0">FAW</h1>
-                <p className="mt-0 help">Fragen an die Wissenden</p>
-              </div>
-              <button
-                onClick={() => toggleAsk()}
-                className={"button is-link" + (askIsActive
-                ? " is-light"
-                : "")}>Frage einreichen</button>
+            <div className="is-flex is-justify-content-space-between">
+              <h1 className="title">Questions</h1>
+              <button onClick={() => toggleAsk()} className={"button is-link" + (askIsActive ? " is-light" : "")}>Frage einreichen</button>
             </div>
 
             <div id="submit-box">
-              <Submit
-                askIsActive={askIsActive}
-                toggleAsk={toggleAsk}
-                allTagsSelect={allTagsSelect}/>
+              <Submit askIsActive={askIsActive} toggleAsk={toggleAsk} allTagsSelect={allTagsSelect}/>
             </div>
 
             <Filter

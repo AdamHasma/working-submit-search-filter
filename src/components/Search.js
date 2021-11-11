@@ -8,7 +8,7 @@ const Search = ({ searchKeyword, term }) => {
   }
 
   return (
-    <div className="mobile-full field has-addons">
+    <div className="field has-addons">
       <p className="control">
         <input ref={inputEl} className="input" type="text" placeholder="Suche nach einer Frage" value={term} onChange={getSearchTerm}/>
       </p>
